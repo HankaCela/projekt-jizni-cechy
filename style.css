@@ -1,3 +1,104 @@
+/* Základní nastavení box modelu */
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;700&display=swap');
+
+/* Základní styly */
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 50px;
+  background-color: #ccd5ae;
+  color: #333;
+}
+
+article {
+  background: white;
+  padding: 30px 50px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Nadpisy */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 60px;
+  border-bottom: 2px solid #d4a373; /*Tento kód vytváří dělící barevnou čáru */
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #d4a373;
+  margin-top: 48px;
+}
+
+/* Autor článku */
+.author {
+  text-align: center;
+  color: #d4a373;
+}
+
+/* Úvodní text */
+.intro {
+  text-align: left;
+  font-size: 24px;
+  color: #808080;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Obrázky */
+img {
+  border-radius: 8px;
+}
+
+/* Obrázky obtékané textem */
+img.float {
+  max-width: 320px;
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+
+/* Obrázek Českého Krumlova */
+.krumlov-container img {
+  max-width: 250px;
+  float: right;
+  margin: 20px 20px 20px 20px;
+}
+
+/* Hlavní obrázek (úvodní) */
+.main-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Obrázek Šumavy - přes celou šířku */
+img[src*="sumava.jpg"] {
+  width: 100%;
+  margin: 20px 0;
+}
 
